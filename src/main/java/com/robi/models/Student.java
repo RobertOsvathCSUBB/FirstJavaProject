@@ -1,7 +1,8 @@
 package com.robi.models;
+import com.robi.exceptions.MyException;
 
 public class Student extends ParticipantClass implements ParticipantInterface {
-    public Student(String name, Integer age, boolean presentedWork) {
+    public Student(String name, Integer age, boolean presentedWork) throws MyException {
         super(name, age, presentedWork);
         this.type = "Student";
     }
